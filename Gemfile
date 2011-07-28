@@ -11,3 +11,4 @@ gem 'omniauth', ">=0.2.6"
 
 gem 'jquery-rails'
 
+gem 'factory_girl_rails'
