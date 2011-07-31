@@ -1,0 +1,29 @@
+<div id="header">
+  <div id="topnav">
+    <div id="currentuser">
+      <% if user_signed_in? %>
+        <%= link_to_if(user_signed_in?, current_user.name, '/profile'){} %>
+      <% end %>
+    </div>
+    <nav>
+      <%= link_to('meta', '/meta') %>
+      <span class="tn-sep">|</span>
+      <%= link_to('faq', faq_path) %>
+      <span class="tn-sep">|</span>
+      <%= link_to('about', about_path) %>
+      <span class="tn-sep">|</span>
+      <%= link_to_unless(user_signed_in?, 'sign in', signin_path){} %>
+      <%= link_to_if(user_signed_in?, 'sign out', signout_path){} %>
+    </nav>
+  </div>
+  <div id="mainnav">
+    <nav>
+      <%= link_to('Questions', questions_path) %>
+      <a href="#">Tags</a>
+      <%= link_to('Users', users_path) %>
+    </nav>
+    <div id="askbutton">
+      <%= link_to('Ask Question', ask_path) %>
+    </div>
+  </div>
+</div>

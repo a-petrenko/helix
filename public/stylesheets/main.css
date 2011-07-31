@@ -1,0 +1,118 @@
+html>body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#header {
+  margin: 0;
+  padding: 0px 0px 20px 0px;
+  border: 0px;
+  background: #fff;
+  height: 100px; /* ie5win fudge begins */
+  voice-family: "\"}\"";
+  voice-family:inherit;
+  height: 40px;
+}
+
+html>body #header {
+  height: 40px; /* ie5win fudge ends */
+}
+
+div #currentuser{
+  float: left;
+  margin: 0 0 0 15px;
+}
+
+div #currentuser a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #07C;
+}
+
+div #currentuser a:hover {
+  text-decoration: underline;
+}
+
+div #currentuser a:visited {
+  color: #07C;
+}
+
+#left {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px;
+  border: 0px;
+  background: #666;
+  width: 220px; /* ie5win fudge begins */
+  voice-family: "\"}\"";
+  voice-family:inherit;
+  width: 200px;
+}
+
+html>body #left {
+  width: 200px; /* ie5win fudge ends */
+}
+
+#middle {
+  padding: 10px;
+  border: 0px;
+  /*background: #660;*/
+  margin: 0px 150px 0px 220px; 
+}
+
+#right {
+  position: absolute;
+  top: 60px;
+  right: 0px; /* Opera5.02 will show a space 
+  at right when there is no scroll bar */
+  margin: 0px;
+  padding: 10px;
+  border: 0px;
+  /*background: #666;*/
+  width: 150px; /* ie5win fudge begins */
+  voice-family: "\"}\"";
+  voice-family:inherit;
+  width: 130px;
+}
+
+html>body #right {
+  width: 130px; /* ie5win fudge ends */
+}
+        
+#header nav{
+    margin: 0;
+}
+
+#topnav{
+    width: 100%;
+    background: #eef;
+    padding: 5px 0 5px 0;
+    height: 20px;
+}
+
+#topnav nav {
+    margin: 0 50px 0 0;
+    float: right;
+}
+
+#topnav nav .tn-sep {
+    margin: 0 2px 0 2px;
+    color: #CCC;
+    font-size: 110%;
+}
+
+#topnav nav a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #07C;
+}
+
+#topnav a:hover {
+    text-decoration: underline;
+}
+
+#topnav a:visited {
+    color: #07C;
+}

@@ -1,4 +1,32 @@
 Helix::Application.routes.draw do
+
+  get "users/index"
+
+  get "users/new"
+
+  get "users/show"
+
+  get "users/create"
+
+  get "users/edit"
+
+  get "users/update"
+
+  get "users/destroy"
+
+  resources :questions, :users
+
+  match '/ask' => 'questions#new', as: :ask
+  match '/auth/:provider/callback' => 'sessions#create'
+  match '/auth/failure' => 'sessions#failure'
+  match '/signout' => 'sessions#destroy', :as => :signout
+  
+  match '/signin' => 'pages#signin', :as => :signin
+  match '/about' => 'pages#about', :as => :about
+  match '/faq' => 'pages#faq', :as => :faq
+
+  root to: 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

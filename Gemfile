@@ -12,3 +12,5 @@ gem 'omniauth', ">=0.2.6"
 gem 'jquery-rails'
 
 gem 'factory_girl_rails'
+gem 'mongrel', '>=1.2.0.pre2'
+
