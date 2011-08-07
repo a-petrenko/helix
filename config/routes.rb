@@ -1,19 +1,5 @@
 Helix::Application.routes.draw do
 
-  get "users/index"
-
-  get "users/new"
-
-  get "users/show"
-
-  get "users/create"
-
-  get "users/edit"
-
-  get "users/update"
-
-  get "users/destroy"
-
   resources :questions, :users
 
   match '/ask' => 'questions#new', as: :ask

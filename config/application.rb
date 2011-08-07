@@ -44,7 +44,11 @@ module Helix
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
+    config.mongoid.preload_models = true
+
     config.generators do |g|
+      g.template_engine :haml
+      g.test_framework :rspec, :fixture => true, :views => false
       g.view_specs false
       g.helper_specs false
     end

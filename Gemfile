@@ -8,6 +8,12 @@ gem 'capybara'
 gem 'mongoid'
 gem 'bson_ext'
 gem 'omniauth', ">=0.2.6"
+#gem "declarative_authorization"
+gem 'cancan'
+
+gem 'compass'
+gem 'haml'
+gem "haml-rails"
 
 gem 'jquery-rails'
 
